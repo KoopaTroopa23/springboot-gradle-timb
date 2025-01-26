@@ -1,0 +1,8 @@
+{
+    "siteUrl": "https://the-internet.herokuapp.com/",
+    "invalidUsername": "badUser",
+    "invalidPassword": "badPass",
+    "email": "test@example.com",
+    "uploadFilePath": "some-file.txt"
+  }
+  
