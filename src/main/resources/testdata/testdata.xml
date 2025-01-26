@@ -1,0 +1,5 @@
+<testdata>
+    <loginUrl>https://example.com/login</loginUrl>
+    <invalidUsername>xmlUser</invalidUsername>
+    <invalidPassword>xmlPass</invalidPassword>
+</testdata>
