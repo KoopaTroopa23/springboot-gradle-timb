@@ -1,6 +1,6 @@
 // Package declaration: This specifies the package in which the class resides. 
 // Packages help organize your code and avoid class name conflicts.
-package section3to10;
+package timBTraining;
 
 // Import statement: Includes the ArrayList class for potential use.
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 
 // Class definition: This is the class named "FirstLessons". It contains the main method.
-public class FirstLessons {
+public class SectionThree {
 
     /**
      * The main method: This is the entry point of the Java program.
@@ -22,7 +22,7 @@ public class FirstLessons {
         
         // Prints "Hello World" to the console.
         // This is often the first program a beginner writes to ensure the setup works correctly.
-        System.out.println("Hello World");
+        System.out.println("Hello World");      // system out print is a method
         
         // Variables and Keywords
         // A variable is used to store information in memory for use during program execution.
@@ -227,6 +227,8 @@ public class FirstLessons {
        
        System.out.println(result);
        
+       
+       // Multiple Statements in Curly Bracees  Abbreviating Operators
        //  {}
        
        int resulta = 1;
@@ -275,6 +277,12 @@ public class FirstLessons {
        double resultj = 10;
        resultj /= 5.5;
        System.out.println("resultj = " + resultj);
+       
+    // Shorthand Operators
+       
+       
+       
+       
        
        
     }
