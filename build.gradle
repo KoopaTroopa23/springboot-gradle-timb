@@ -26,8 +26,6 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.seleniumhq.selenium:selenium-java:4.13.0'
-	implementation 'org.seleniumhq.selenium:selenium-devtools-v85:4.13.0'
 	implementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
 	implementation 'commons-io:commons-io:2.11.0'
 	implementation 'org.json:json:20230227'
@@ -48,5 +46,5 @@ tasks.named('test') {
 }
 
 application {
-	mainClass = 'com.example.demo.AllTestsRunner'
+	mainClass = 'com.example.demo.SpringbootGradleTimbApplication'
 }

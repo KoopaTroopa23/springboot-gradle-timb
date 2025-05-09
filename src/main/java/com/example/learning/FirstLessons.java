@@ -1,6 +1,6 @@
 // Package declaration: This specifies the package in which the class resides. 
 // Packages help organize your code and avoid class name conflicts.
-package section3to10;
+package com.example.learning;
 
 // Import statement: Includes the ArrayList class for potential use.
 import java.util.ArrayList;
