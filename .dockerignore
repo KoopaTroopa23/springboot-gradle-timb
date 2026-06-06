@@ -4,3 +4,6 @@ build
 .gitignore
 *.md
 section3to10
+# Exclude Windows-only ChromeDriver binary and test screenshots from the image
+src/main/resources/drivers
+src/main/resources/screenshots
