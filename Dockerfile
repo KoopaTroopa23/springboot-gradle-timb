@@ -1,5 +1,5 @@
 # Build stage — compile and package with full JDK
-FROM eclipse-temurin:17-jdk-jammy AS build
+FROM eclipse-temurin:21-jdk-jammy AS build
 WORKDIR /app
 COPY gradlew .
 COPY gradle gradle
@@ -9,7 +9,7 @@ COPY src src
 RUN chmod +x gradlew && ./gradlew bootJar --no-daemon
 
 # Run stage — lean JRE-only image
-FROM eclipse-temurin:17-jre-jammy
+FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
 EXPOSE 8080

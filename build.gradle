@@ -42,6 +42,10 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+	// Selenium tests require a local Chrome browser and running server;
+	// they are excluded from the standard test task and must be run manually.
+	exclude '**/SeleniumReusableTest*'
+	exclude '**/SpringControllerSeleniumTest*'
 }
 
 application {
