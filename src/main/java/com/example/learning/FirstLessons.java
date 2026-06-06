@@ -2,9 +2,6 @@
 // Packages help organize your code and avoid class name conflicts.
 package com.example.learning;
 
-// Import statement: Includes the ArrayList class for potential use.
-import java.util.ArrayList;
-
 /**
  * Project Name: First Lessons
  * Description: A simple Java program to demonstrate the basics of the main method,
@@ -142,47 +139,33 @@ public class FirstLessons {
         myFloatValue = 5f;
         myDoubleValue = 6d;
         
-        
         Float myOtherFloatValue = (float) 5.25f;
         System.out.println(myOtherFloatValue);
         
         // INT AND DOUBLE are the Most common used
         
-  // Char and boolean Primitive Data Types
-        
-        char myChar = 'D';         //  Holds on 1 character and must be single quote  -  String holds many  
-        							// store key presses , loop alphabet
+        // Char and boolean Primitive Data Types
+        char myChar = 'D';         //  Holds only 1 character and must be single quote  -  String holds many  
         System.out.println(myChar);
         
-        // Unicode    - symbol.cc/en/unicode-table  - 3 ways to store a char value:  D, \u0044 and 68
-        
-        char myUnicode = '\u0044';
-        
+        // Unicode    - symbol.cc/en/unicode-table  - 3 ways to store a char value:  D, D and 68
+        char myUnicode = 'D';
         System.out.println(myUnicode);
         
         char myIntchar = 68;
-        
         System.out.println(myIntchar);
         
-   // Boolean Data Types  - All 8 of Java Primitive Data Type byte, short, long, int, double, float, char, boolean
-        
-        
-         boolean myTrueBooleanValue = true;
-         
-         boolean myFalseBooleanValue = false;
-         
-         System.out.println(myTrueBooleanValue + " " + myFalseBooleanValue);
+        // Boolean Data Types  - All 8 of Java Primitive Data Type byte, short, long, int, double, float, char, boolean
+        boolean myTrueBooleanValue = true;
+        boolean myFalseBooleanValue = false;
+        System.out.println(myTrueBooleanValue + " " + myFalseBooleanValue);
 
+        // MOST USED PRIMITIVE DATA TYPE:    INT, DOUBLE and BOOLEAN
+        // Classes in Class are custom data types.    
         
-    // MOST USED PRIMITIVE DATA TYPE:    INT, DOUBLE and BOOLEAN
-    // Classes in Class are custom data types.    
-        
-    // String is a class that contains a seq of char
-        
+        // String is a class that contains a seq of char
         String myString = "This is a string";
-        
-        String mySecondString = "I wish i had \u00241,000,000.00";
-        
+        String mySecondString = "I wish i had $1,000,000.00";
         System.out.println("mystring is equal to " + " myString " + " mySecondString ");
         
         int myInt = 50;
@@ -192,90 +175,61 @@ public class FirstLessons {
         double doubleNumber = 120.47; lastString = lastString + doubleNumber;
         System.out.println(doubleNumber + lastString);
         
-     // Strings are immuntable - cannot be changed   but StringBuilder class is mutable meaning it can be changed
-     /// Both are classes    
+        // Strings are immutable - cannot be changed   but StringBuilder class is mutable meaning it can be changed
+        // Both are classes    
         
-  // Operators - perform specific operations in one, two or, three operands
-        
+        // Operators - perform specific operations in one, two or, three operands
         // Operand = any object manipulated by operator
-        
-    // Expression - Combining variable, literals, method return values and operators
-        
+        // Expression - Combining variable, literals, method return values and operators
         
         int result = 1 + 2;  // 1 + 2 = 3
- // p data type  variable  assignment operator   operand   operator   operand
-        
         int previousResult = result; 
-        
-        result = result -1; // 3 - 1 = 2
-        
+        result = result - 1; // 3 - 1 = 2
         System.out.println("previousResult = " + previousResult);
-        
         
         char firstChar = 'A'; char secondChar = 'B';
         System.out.println(firstChar + secondChar);
-       System.out.println("" + firstChar + secondChar);
-        		//     empty string ""
+        System.out.println("" + firstChar + secondChar);
         
-       result = result * 10;    // 2 * 10 = 20
-       result = result / 4;  	// 20 / 4 = 5
-       
-       // REMAINDER OPERATOR = remainder or modulos   %
-       
-       result = result % 3;  // the remainder of (5 % 3) = 2
-       
-       
-       System.out.println(result);
-       
-       //  {}
-       
-       int resulta = 1;
-       resulta = resulta + 1;
-       System.out.println("result = " + result);
-       
-       // Different way to add or increment
-       //  Post fix icrement Operator  result++;
-       // Compound Assignment Operator   result+=1;
-       
-       
-       int resultb = 1;
-       resultb++;    // Increment Operator
-       System.out.println("result = " + resultb);
-       
-       int resultc = 1;
-       int resultd = 1;
-       int resulte = 1;
-       
-       resultc--;  // Decrement Operator
-       
-       resultd -= 1; // Compound Operator
-       
-       resulte += 1; // Compound Operator
-       
-       System.out.println("resultc = " + resultc + " resultd = " + resultd + " resulte = " + resulte);
-       
-       
-       // Test
-       int resultf = 10;
-       resultf-=2;
-       System.out.println("resultf = " + resultf);
-       
-       int resultg = 10;
-       resultg -= 5.5;
-       System.out.println("resultg = " + resultg);
-       
-       double resulth = 10;
-       resulth -= 5.5;
-       System.out.println("resulth = " + resulth);
-       
-       double resulti = 10;
-       resulti *= 5.5;
-       System.out.println("resulti = " + resulti);
-       
-       double resultj = 10;
-       resultj /= 5.5;
-       System.out.println("resultj = " + resultj);
-       
-       
+        result = result * 10;    // 2 * 10 = 20
+        result = result / 4;     // 20 / 4 = 5
+        result = result % 3;     // the remainder of (5 % 3) = 2
+        System.out.println(result);
+        
+        int resulta = 1;
+        resulta = resulta + 1;
+        System.out.println("result = " + result);
+        
+        int resultb = 1;
+        resultb++;    // Increment Operator
+        System.out.println("result = " + resultb);
+        
+        int resultc = 1;
+        int resultd = 1;
+        int resulte = 1;
+        resultc--;  // Decrement Operator
+        resultd -= 1; // Compound Operator
+        resulte += 1; // Compound Operator
+        System.out.println("resultc = " + resultc + " resultd = " + resultd + " resulte = " + resulte);
+        
+        int resultf = 10;
+        resultf -= 2;
+        System.out.println("resultf = " + resultf);
+        
+        int resultg = 10;
+        resultg -= 5;
+        System.out.println("resultg = " + resultg);
+        
+        double resulth = 10;
+        resulth -= 5.5;
+        System.out.println("resulth = " + resulth);
+        
+        double resulti = 10;
+        resulti *= 5.5;
+        System.out.println("resulti = " + resulti);
+        
+        double resultj = 10;
+        resultj /= 5.5;
+        System.out.println("resultj = " + resultj);
     }
 }
