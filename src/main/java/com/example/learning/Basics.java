@@ -40,6 +40,10 @@ public class Basics {
 
         int myThirdNumber = (10 + 5) + (10 * 5);
         System.out.println(myThirdNumber);
+
+        int myFourthNumber = (10 + 20) + (20 - 5);
+        System.out.println(myFourthNumber);
+        
         
       
     }
