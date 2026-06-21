@@ -5,5 +5,26 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SPRING_PROFILES_ACTIVE=default
+      - SPRING_PROFILES_ACTIVE=postgres
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/timbdb
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+    depends_on:
+      - db
     restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    container_name: springboot-gradle-timb-db
+    environment:
+      - POSTGRES_DB=timbdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - timbdb-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  timbdb-data:

@@ -39,3 +39,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Gradle logs ###
+build-log.txt
